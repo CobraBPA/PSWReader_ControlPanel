@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSWReader</title>
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="libs/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="libs/jquery-3.5.1.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col sidebar">
+      <div class="sidebar-header">
+        <h2><b>PSW</b>Reader</h2>
+      </div>
+      <ul class="list-unstyled components">
+        <li>
+          <a href="/" data-link>
+            <svg width="1em" height="1em">
+              <use xlink:href="bootstrap-icons.svg#house-door-fill"/>
+            </svg>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="/books" data-link>
+            <svg width="1em" height="1em">
+              <use xlink:href="bootstrap-icons.svg#book-fill"/>
+            </svg>
+            Books
+          </a>
+        </li>
+        <li>
+          <a href="/users" data-link>
+            <svg width="1em" height="1em">
+              <use xlink:href="bootstrap-icons.svg#people-fill"/>
+            </svg>
+            Users
+          </a>
+        </li>
+        <li>
+          <a href="/rentals" data-link>
+            <svg width="1em" height="1em">
+              <use xlink:href="bootstrap-icons.svg#layers-fill"/>
+            </svg>
+            Rentals
+          </a>
+        </li>
+      </ul>
+      <div class="sidebar-footer mb-3">
+        <form action="/logout" method="get">
+          <button type="submit" class="btn btn-light btn-logout">Log Out</button>
+        </form>
+    </div>
+    </nav>
+    <main role="main" id="app" class="ml-auto mt-3 container-fluid"></main>
+  </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
